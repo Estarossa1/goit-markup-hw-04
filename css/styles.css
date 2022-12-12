@@ -139,7 +139,9 @@ img {
 }
 
 .li-photos-hero {
-    box-shadow: 0px 1px 6px var(--color-button-ind), 0px 1px 1px var(--color-button-inde) 0px 2px 1px var(--color-button-ind);
+    box-shadow: 0px 1px 6px var(--color-button-ind),
+    0px 1px 1px var(--color-button-inde),
+    0px 2px 1px var(--color-button-ind);
 }
 
 .li-photos-hero:not(:last-child) {
@@ -172,6 +174,13 @@ img {
 
 .li-portfolio-job {
     flex-basis: calc((100% - 48px) / 3);
+}
+
+.li-portfolio-job:hover {
+    border: 0.5px solid var(--color-team);
+box-shadow: 0px 1px 6px var(--color-button-ind),
+0px 1px 1px var(--color-button-inde),
+0px 2px 1px var(--color-button-ind);
 }
 
 .body-text {
@@ -333,7 +342,9 @@ img {
 
 .button-portfolio {
     font-family: 'Roboto', sans-serif;
-    box-shadow: 0px 3px 1px var(--color-button-portfolio), 0px 2px 1px var(--color-button-portfolio-one), 0px 2px 2px var(--color-button-portfolio-two);
+    box-shadow: 0px 3px 1px var(--color-button-portfolio),
+    0px 2px 1px var(--color-button-portfolio-one),
+    0px 2px 2px var(--color-button-portfolio-two);
     border: none;
     cursor: pointer;
     border-radius: 4px;
@@ -378,7 +389,9 @@ img {
 .button:hover {
     background: var(--color-link);
     color: var(--color-fff);
-    box-shadow: 0px 1px 6px var(--color-button-ind), 0px 1px 1px var(--color-button-inde), 0px 2px 1px var(--color-button-index);
+    box-shadow: 0px 1px 6px var(--color-button-ind),
+    0px 1px 1px var(--color-button-inde),
+    0px 2px 1px var(--color-button-index);
 }
 
 .button:focus {
@@ -431,7 +444,7 @@ img {
     display: block;
 
     object-fit: none;
-    object-position: 50% 50%;
+    object-position: center;
 }
 
 .div-svg {
@@ -442,7 +455,7 @@ img {
 }
 
 .img-main-background {
-    object-position: 50% 50%;
+    object-position: center;
     object-fit: fill;
 
     background-image: url(./img/img-main.jpg);
@@ -475,6 +488,12 @@ img {
 .ul-media-team {
     display: flex;
     color:var(--color-fff);
+}
+
+.li-media-team {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .li-media-team:not(:last-child) {
@@ -510,14 +529,17 @@ img {
     margin-top: 12px;
 }
 
+.li-svg-team {
+    width: 40px;
+    height: 40px;
+}
+
 .li-svg-team:not(:last-child) {
     margin-right: 24px;
 }
 
 .div-svg-footer {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+
 
     display: flex;
     align-items: center;
@@ -531,9 +553,9 @@ img {
 }
 
 .div-svg-team {
-    width: 40px;
+    /* width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 50%; */
 
     display: flex;
     align-items: center;
@@ -559,15 +581,12 @@ img {
     color: var(--color-link);
 }
 
-/* не спрацьовує hover одночасно для svg та рамки. 
-пробував додати padding в результаті зменшується логотип */
-
 .svg-customers {
-    width: 156px;
-    height: 56px;
+    width: 100%;
+    height: 100%;
 
-    /* padding-top: 16px;
-    padding-bottom: 16px; */
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     display: block;
     fill: var(--color-border);
@@ -590,4 +609,21 @@ img {
     flex-direction: column;
     display: flex;
     margin-right: 120px;
+}
+
+.svg-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.link-customers {
+    width: 100%;
+    height: 100%;
+}
+
+.svg-link-footer {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
