@@ -75,6 +75,9 @@ img {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+.header-portfolio {
     box-shadow: 0px 2px 1px var(--color-button-ind),
     0px 1px 1px var(--color-button-inde),
     0px 1px 6px var(--color-button-ind);
