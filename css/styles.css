@@ -75,9 +75,9 @@ img {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
-}
-
-.header-portfolio {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 0px 2px 1px var(--color-button-ind),
     0px 1px 1px var(--color-button-inde),
     0px 1px 6px var(--color-button-ind);
@@ -595,6 +595,7 @@ img {
     padding-bottom: 16px;
 
     display: block;
+    fill: var(--color-link);
     fill: var(--color-border);
 }
 
@@ -610,7 +611,17 @@ img {
 .div-footer-all {
     display: flex;
 }
+/* --- */
+.link-customers {
+    color: var(--color-border);
+}
 
+.link-customers:focus { color: var(--color-link); }
+
+.svg-customers {
+    fill: currentColor; 
+}
+/* --- */
 .text-footer {
     flex-direction: column;
     display: flex;
@@ -628,8 +639,22 @@ img {
     height: 100%;
 }
 
+.link-customers:focus {
+    fill: currentColor;
+}
+
 .svg-link-footer {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+}
+
+.svg-mesengers {
+    fill: var(--color-logo-footer);
+}
+
+.coco {
+    color: tomato;
+    text-decoration: none;
+    text-decoration: none;
 }
